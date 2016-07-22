@@ -7,9 +7,10 @@ function FAADataHelper(){}
 
 FAADataHelper.prototype.requestAirportStatus = function(airportCode){
     return this.getAirportStatus(airportCode).then(function(res){
-        console.log('success - recived airport info for ' + airportCode);
         return res.body;
     });
+
+    /** Handle cases where invalid response is sent: send an invalid object */
 };
 
 FAADataHelper.prototype.getAirportStatus = function(airportCode){
@@ -29,7 +30,7 @@ FAADataHelper.prototype.formatAirportStatus = function(airportStatus){
         wind: airportStatus.weather.wind
     });
 
-    if(airportStatus.delay){
+    if(airportStatus.delay === 'true'){
         var template = _.template('There is currently a delay for ${airport}. ' + 
         'The average delay time is ${delay_time}. ' + 
         'Delay is because of the following: ${delay_reason}. ${weather}');
