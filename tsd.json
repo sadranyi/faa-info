@@ -1,0 +1,42 @@
+{
+  "version": "v4",
+  "repo": "borisyankov/DefinitelyTyped",
+  "ref": "master",
+  "path": "typings",
+  "bundle": "typings/tsd.d.ts",
+  "installed": {
+    "chai/chai.d.ts": {
+      "commit": "2aa973a605d0fc7ae4ea5c32653331a819e81f71"
+    },
+    "assertion-error/assertion-error.d.ts": {
+      "commit": "2aa973a605d0fc7ae4ea5c32653331a819e81f71"
+    },
+    "mocha/mocha.d.ts": {
+      "commit": "2aa973a605d0fc7ae4ea5c32653331a819e81f71"
+    },
+    "chai-as-promised/chai-as-promised.d.ts": {
+      "commit": "2aa973a605d0fc7ae4ea5c32653331a819e81f71"
+    },
+    "promises-a-plus/promises-a-plus.d.ts": {
+      "commit": "2aa973a605d0fc7ae4ea5c32653331a819e81f71"
+    },
+    "bluebird/bluebird.d.ts": {
+      "commit": "2aa973a605d0fc7ae4ea5c32653331a819e81f71"
+    },
+    "node/node.d.ts": {
+      "commit": "2aa973a605d0fc7ae4ea5c32653331a819e81f71"
+    },
+    "request-promise/request-promise.d.ts": {
+      "commit": "2aa973a605d0fc7ae4ea5c32653331a819e81f71"
+    },
+    "request/request.d.ts": {
+      "commit": "2aa973a605d0fc7ae4ea5c32653331a819e81f71"
+    },
+    "form-data/form-data.d.ts": {
+      "commit": "2aa973a605d0fc7ae4ea5c32653331a819e81f71"
+    },
+    "lodash/lodash.d.ts": {
+      "commit": "2aa973a605d0fc7ae4ea5c32653331a819e81f71"
+    }
+  }
+}
