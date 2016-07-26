@@ -1,0 +1,1 @@
+{ "intents": [ { "intent": "airportinfo", "slots": [ { "name": "AIRPORTCODE", "type": "FAACODE" } ] }, { "intent": "AMAZON.StopIntent", "slots": [] }, { "intent": "AMAZON.CancelIntent", "slots": [] }, { "intent": "AMAZON.NoIntent", "slots": [] }, { "intent": "AMAZON.YesIntent", "slots": [] }, { "intent": "AMAZON.HelpIntent", "slots": [] } ] }
