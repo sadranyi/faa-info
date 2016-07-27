@@ -23,7 +23,7 @@ app.intent('airportinfo',{
 
     if(_.isEmpty(airportCode)){
         var prompt = 'I didn\'t hear an airport code. Tell me an airport code, or say no to quit.';
-        res.say(prompt).reprompt(prompt).shouldEndSession(false).send();
+        res.say(prompt).reprompt(prompt).shouldEndSession(false);
         return true;
     }else{
         var faaHelper = new FAADataHelper();
@@ -40,7 +40,7 @@ app.intent('airportinfo',{
 
 /** STOP and CANCEL function */
 var exitfunction = function(req, res){
-    var speechOut = 'GoodBye!';
+    var speechOut = 'Ok!, Thank you and GoodBye!';
     res.say(speechOut).shouldEndSession(true);
 };
 
@@ -58,7 +58,7 @@ app.intent('AMAZON.YesIntent', function(req, res) {
 app.intent('AMAZON.HelpIntent', function(req, res){
     var speechOut = 'To request information about an airport, say its FAA code, ' + 
     'For example, to get information about Portland International airport, say P D X. you can also say no to quit.';
-    res.say(speechOut).shouldEndSession(false).send();
+    res.say(speechOut).shouldEndSession(false);
 });
 
 console.log(app.utterances().replace(/\{\-\|/g, '{'));
